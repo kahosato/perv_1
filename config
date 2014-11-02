@@ -1,0 +1,44 @@
+%% rate at which signal decays
+%PATH_LOSS_EXPONENT = 3.0;
+%
+%% randomness of received signal due to multipath
+%SHADOWING_STANDARD_DEVIATION = 4.0;
+%
+%% unit distance
+%% no pair of nodes should be closer than D0
+%D0 = 1.0
+%
+%% power decay in db per D0
+%PL_D0 = 55.0
+%
+%% Radio parameters
+%% The effect of thermal noise follows Gaussian r.v. with mean 0
+%% this parameter decides the standard deviation of it.
+%% between 4dB to 5dB
+%WHITE_GAUSSIAN_NOISE = 4;
+%
+%% Average noise floor in dBm
+%% between -110 to -104
+%
+%NOISE_FLOOR = -105.0
+%
+%% covariance matrix in dB
+%% hardware dependent
+%% smaller S11 and S22, the lower the impact on link asymmetry
+%% abs(S21) < sqrt(S11 x S22)
+%% variance of noise floor
+%% [3.7 -3.3; -3.3 6.0] for high asymmetry levels
+%% [0.9, -0.7; -0.7 1.2] for low asymmetry levels
+%S11 = 3.7
+%% covariance between noise floor and output power
+%S12 = -3.3;
+%% same as S12
+%S21 = -3.3;
+%% variance of output power
+%S22 = 6.0;
+
+% random topology
+TOPOLOGY = 3;
+NUMBER_OF_NODES = 3;
+TERRAIN_DIMENSIONS_X = 5.0;
+TERRAIN_DIMENSIONS_Y = 5.0;

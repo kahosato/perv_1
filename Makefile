@@ -1,0 +1,3 @@
+COMPONENT=SimpleMessageAppC
+include $(MAKERULES)
+
